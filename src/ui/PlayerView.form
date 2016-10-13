@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ui.PlayerView">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="35" y="19" width="405" height="328"/>
+    </constraints>
+    <properties>
+      <maximumSize width="245" height="304"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="3f86a" binding="listPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="fec1" class="javax.swing.JList" binding="playList">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <enabled value="true"/>
+              <maximumSize width="140" height="230"/>
+              <minimumSize width="140" height="230"/>
+              <model/>
+              <preferredSize width="140" height="230"/>
+              <toolTipText value=""/>
+            </properties>
+          </component>
+          <grid id="85b8c" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints border-constraint="South"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="698d0" class="javax.swing.JButton" binding="nextSongButton">
+                <constraints/>
+                <properties>
+                  <text value="Next song"/>
+                </properties>
+              </component>
+              <component id="263bc" class="javax.swing.JButton" binding="previousSongButton" default-binding="true">
+                <constraints/>
+                <properties>
+                  <text value="Previous song"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <component id="be18c" class="javax.swing.JTextArea" binding="songListTextArea" default-binding="true">
+            <constraints border-constraint="First"/>
+            <properties>
+              <minimumSize width="45" height="16"/>
+              <text value="Song List"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="fb5ab" binding="buttonPanel" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="300"/>
+            <preferred-size width="140" height="300"/>
+            <maximum-size width="140" height="300"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="ba1e1" class="javax.swing.JButton" binding="playButton">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Play"/>
+            </properties>
+          </component>
+          <component id="d274b" class="javax.swing.JButton" binding="pauseButton">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Pause"/>
+            </properties>
+          </component>
+          <component id="88d41" class="javax.swing.JButton" binding="addSongButton">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Add song"/>
+            </properties>
+          </component>
+          <component id="ece2c" class="javax.swing.JButton" binding="deleteSongButton">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Delete song"/>
+            </properties>
+          </component>
+          <component id="b4997" class="javax.swing.JSlider" binding="slideVolume">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <minimum-size width="100" height="20"/>
+                <preferred-size width="100" height="20"/>
+                <maximum-size width="100" height="20"/>
+              </grid>
+            </constraints>
+            <properties>
+              <minorTickSpacing value="5"/>
+              <snapToTicks value="true"/>
+              <value value="100"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
